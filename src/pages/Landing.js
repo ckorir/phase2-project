@@ -1,8 +1,14 @@
 import React from 'react'
-import WatchList from '../components/WatchList'
+import Navbar from '../components/Navbar';
+import CurrencyCollection from '../components/CurrencyCollection';
+import Footer from '../components/Footer';
 
 export default function Landing() {
   return (
-    <div>Landing</div>
+    <div>
+      <Navbar />
+      <CurrencyCollection />
+      <Footer />
+    </div>
   )
 }

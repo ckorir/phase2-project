@@ -1,16 +1,10 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import CurrencyCollection from './components/CurrencyCollection';
-import Footer from './components/Footer';
-
+import Landing from './pages/Landing';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <CurrencyCollection />
-      <Footer />
-      
+      <Landing />
     </div>
   );
 }
