@@ -23,7 +23,7 @@ export default function CurrencyCollection() {
     }
 
     // Add to Watch List
-    const addToYourBotArmy = (coin) => {
+    const addToYourList = (coin) => {
         if (!yourWatchlist.find(c => c.id === coin.id)) {
             setYourWatchlist([...yourWatchlist, coin]);
         }
@@ -35,8 +35,8 @@ export default function CurrencyCollection() {
         setYourWatchlist(yourWatchlist.filter(c => c.id !== coin.id));
     };
 
-    // Delete Bot from Server
-    const dischargeBot = (coin) => {
+    // Delete Coin from Server
+    const dischargeCoin = (coin) => {
         fetch(`http://localhost:3000/total_market_cap/${coin.id}`, {
         method: 'DELETE'
         })
@@ -45,10 +45,27 @@ export default function CurrencyCollection() {
         setYourWatchlist(updatedCoin);
         })
         .catch(error => console.error(error));
-  };
+    };
+
+
 
 
   return (
-    <div>CurrencyCollection</div>
+    <div className="container row mx-auto">
+      <WatchList list={yourWatchlist} releaseFromYourWatchlist={releaseFromList} dischargeCoin={dischargeCoin} />
+      {currency.map(coin => (
+        <div className='col-md-3' key={coin.id}>
+          <div className='cards my-4'>
+            <div className='col coininfo p-4' >
+              <div>
+                <h5>{coin.name}</h5>
+                <p>Market Cap</p>
+                <p>{coin.marketCap}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
   )
 }
