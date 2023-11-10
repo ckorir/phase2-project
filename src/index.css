@@ -30,6 +30,11 @@ code {
   background-color: rgba(161, 161, 161, 0.377);
   word-wrap: break-word;
   border-radius: 5%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.coininfo:hover{
+  transform: translateY(-9px);
 }
 
 p{
@@ -68,6 +73,7 @@ button{
   padding: 1em;
   text-align: center;
   align-items: center;
+  margin-bottom: 2em;
 }
 
 .footer{
