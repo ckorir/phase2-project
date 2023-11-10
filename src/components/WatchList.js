@@ -3,6 +3,7 @@ import React from 'react'
 export default function WatchList({ list, releaseFromYourWatchlist, dischargeCoin }) {
   return (
     <div className="row mx-auto myList">
+        <h3 className='my-3'>My Watchlist</h3>
       {list && list.map(coin => (
         <div className='col-md-3' key={coin.id}>
           <div className='cards my-2'>

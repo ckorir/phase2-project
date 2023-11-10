@@ -1,3 +1,12 @@
+:root{
+  --main-color: #100D37;
+  --secondary-color: #383472;
+  --font-primary: rgb(255, 255, 255);
+  --font-secondary: rgba(245, 245, 245, 0.322);
+  --font-type: 'Poppins', sans-serif;
+  --border-radius: 17px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,29 +16,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App{
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 2%, rgba(54,0,147,1) 44%, rgba(111,8,201,1) 100%);
+  color: var(--font-primary);
+  font-family: var(--font-type);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.cards{
-  background-color: rgb(221, 221, 221);
-  border-radius: 2%;
-}
-
 .coininfo{
-  background-color: rgb(240, 240, 240);
+  background-color: rgba(161, 161, 161, 0.377);
   word-wrap: break-word;
+  border-radius: 5%;
 }
 
 p{
   font-size: 15px;
-  color: rgb(99, 98, 98);
+  color: var(--font-primary);
 }
 
 .myList{
-  background-color: rgb(171, 214, 18);
+  background-color: var(--secondary-color);
   width: 100%;
   min-height: 12em;
   border-radius: 10px;
+}
+
+h3{
+  color: white;
+  
 }
