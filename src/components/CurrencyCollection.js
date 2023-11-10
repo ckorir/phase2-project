@@ -30,6 +30,11 @@ export default function CurrencyCollection() {
         console.log(coin)
     };
 
+    // Release from Watchlist
+    const releaseFromList = (coin) => {
+        setYourWatchlist(yourWatchlist.filter(c => c.id !== coin.id));
+    };
+
 
   return (
     <div>CurrencyCollection</div>
