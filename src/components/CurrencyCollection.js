@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import WatchList from './WatchList';
+import AddCurrency from './AddCurrency';
 
 export default function CurrencyCollection() {
 
@@ -47,10 +48,15 @@ export default function CurrencyCollection() {
         .catch(error => console.error(error));
     };
 
+    const addCurrency = (newCurrency) => {
+      setCurrency([...currency, newCurrency]);
+    };
+
 
   return (
     <div className="container row mx-auto">
       <WatchList list={yourWatchlist} releaseFromYourWatchlist={releaseFromList} dischargeCoin={dischargeCoin} />
+      <AddCurrency onAddCurrency={addCurrency} />
       {currency.map(coin => (
         <div className='col-md-3' key={coin.id}>
           <div className='cards my-4'>
