@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cards{
+  background-color: rgb(221, 221, 221);
+  border-radius: 2%;
+}
