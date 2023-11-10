@@ -8,7 +8,7 @@ export default function CurrencyCollection() {
     const [yourWatchlist, setYourWatchlist] = useState([]);
   
     useEffect(() => {
-        // calls the fetchBots function
+        // calls the fetchCurrency function
         fetchData();
     }, []);
 
