@@ -48,8 +48,6 @@ export default function CurrencyCollection() {
     };
 
 
-
-
   return (
     <div className="container row mx-auto">
       <WatchList list={yourWatchlist} releaseFromYourWatchlist={releaseFromList} dischargeCoin={dischargeCoin} />
@@ -61,6 +59,7 @@ export default function CurrencyCollection() {
                 <h5>{coin.name}</h5>
                 <p>Market Cap</p>
                 <p>{coin.marketCap}</p>
+                <button onClick={() => addToYourList(coin)}>Add to Watchlist</button>
               </div>
             </div>
           </div>
