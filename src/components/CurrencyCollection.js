@@ -12,7 +12,7 @@ export default function CurrencyCollection() {
     }, []);
 
     function fetchData() {
-        const fetchurl = 'http://localhost:8001/bots';
+        const fetchurl = 'http://localhost:3000/total_market_cap';
     
         fetch(boturl)
           .then((response) => response.json())
@@ -21,7 +21,6 @@ export default function CurrencyCollection() {
     
         console.log(bots);
     }
-    
 
 
   return (
