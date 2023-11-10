@@ -8,8 +8,19 @@ export default function CurrencyCollection() {
   
     useEffect(() => {
         // calls the fetchBots function
-        fetchBots();
+        fetchData();
     }, []);
+
+    function fetchData() {
+        const fetchurl = 'http://localhost:8001/bots';
+    
+        fetch(boturl)
+          .then((response) => response.json())
+          .then(data => setBots(data))
+          .catch(error => console.error(error)); // Add error handling
+    
+        console.log(bots);
+    }
     
 
 
