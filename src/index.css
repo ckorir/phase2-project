@@ -47,6 +47,7 @@ p{
   width: 100%;
   min-height: 12em;
   border-radius: 10px;
+  margin-bottom: 2em;
 }
 
 h3{
@@ -106,4 +107,8 @@ input{
 
 label{
   padding: .3em 0em;
+}
+
+.add{
+  margin-top: 1em;
 }

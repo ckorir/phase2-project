@@ -19,9 +19,9 @@ export default function AddCurrency({ onAddCurrency }) {
         e.preventDefault();
         onAddCurrency(newCurrency);
         setNewCurrency({
-          date: '',
-          description: '',
-          amount: '',
+            name: '',
+            symbol: '',
+            marketCap: '',
         });
       };
     
@@ -56,7 +56,7 @@ export default function AddCurrency({ onAddCurrency }) {
                 placeholder="Market Cap"
               />
             </label>
-            <button type="submit">Add Currency</button>
+            <button type="submit" className='add'>Add Currency</button>
           </form>
         </div>
     );
