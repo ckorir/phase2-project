@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+     
       <CurrencyCollection />
-      <WatchList />
+      
     </div>
   );
 }

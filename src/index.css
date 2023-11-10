@@ -30,5 +30,6 @@ p{
 .myList{
   background-color: rgb(171, 214, 18);
   width: 100%;
-  min-height: 8em;
+  min-height: 12em;
+  border-radius: 10px;
 }
