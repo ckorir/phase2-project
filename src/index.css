@@ -16,3 +16,13 @@ code {
   background-color: rgb(221, 221, 221);
   border-radius: 2%;
 }
+
+.coininfo{
+  background-color: rgb(240, 240, 240);
+  word-wrap: break-word;
+}
+
+p{
+  font-size: 15px;
+  color: rgb(99, 98, 98);
+}
