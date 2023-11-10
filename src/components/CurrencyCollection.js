@@ -59,7 +59,7 @@ export default function CurrencyCollection() {
                 <h5>{coin.name}</h5>
                 <p>Market Cap</p>
                 <p>{coin.marketCap}</p>
-                <button onClick={() => addToYourList(coin)}>Add to Watchlist</button>
+                <button onClick={() => addToYourList(coin)}>Watchlist</button>
               </div>
             </div>
           </div>
