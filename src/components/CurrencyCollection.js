@@ -60,6 +60,7 @@ export default function CurrencyCollection() {
                 <p>Market Cap</p>
                 <p>{coin.marketCap}</p>
                 <button onClick={() => addToYourList(coin)}>Watchlist</button>
+                <button onClick={() => dischargeCoin(coin)} className="my-2">Delete</button>
               </div>
             </div>
           </div>
