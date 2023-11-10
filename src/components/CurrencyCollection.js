@@ -35,6 +35,18 @@ export default function CurrencyCollection() {
         setYourWatchlist(yourWatchlist.filter(c => c.id !== coin.id));
     };
 
+    // Delete Bot from Server
+    const dischargeBot = (coin) => {
+        fetch(`http://localhost:3000/total_market_cap/${coin.id}`, {
+        method: 'DELETE'
+        })
+        .then(() => {
+        const updatedCoin = yourWatchlist.filter(c => c.id !== coin.id);
+        setYourWatchlist(updatedCoin);
+        })
+        .catch(error => console.error(error));
+  };
+
 
   return (
     <div>CurrencyCollection</div>
