@@ -58,3 +58,15 @@ button{
   width: 10em;
   margin: 5em;
 }
+
+.navbar-brand{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #383472;
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  align-items: center;
+  
+}
