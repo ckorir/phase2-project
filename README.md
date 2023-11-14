@@ -26,8 +26,25 @@ To run the app:
 npm install
 npm start
 ```
+## Server Access
+
+The project fetches data that is being used from a local Server that displays all of the currencies. This allows us to use the data as we want.
+The code for fetching the data is as follows:
+
+![](/src/img/Fetch.png)
+
+- With the data that has been fetched we can be able to delete a currency from the server using the following code: 
+
+![](/src/img/delete.png)
+
+- The website also allows us to be able to add a currency that we could want and it adds the currency to the server. To do that we implement the following code: 
+
+![](/src/img/patch.png)
+
 
 ## Screenshots
+Here are photos as to how the the website fully looks like. This will give you a better understanding of how you as a user will be interracting with the website. 
+
 ![](/src/img/SC1.png)
 ![](/src/img/SC2.png)
 ![](/src/img/SC3.png)
