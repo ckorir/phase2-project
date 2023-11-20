@@ -13,7 +13,7 @@ export default function CurrencyCollection() {
     }, []);
 
     function fetchData() {
-        const fetchurl = 'https://phase2-project-ten.vercel.app';
+        const fetchurl = 'http://localhost:3000/total_market_cap';
     
         fetch(fetchurl)
           .then((response) => response.json())
