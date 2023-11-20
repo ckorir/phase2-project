@@ -13,7 +13,7 @@ export default function CurrencyCollection() {
     }, []);
 
     function fetchData() {
-        const fetchurl = 'https://phase2-project-ten.vercel.app/total_market_cap';
+        const fetchurl = 'http://localhost:3000/total_market_cap';
     
         fetch(fetchurl)
           .then((response) => response.json())
@@ -38,7 +38,7 @@ export default function CurrencyCollection() {
 
     // Delete Coin from Server
     const dischargeCoin = (coin) => {
-        fetch(`https://phase2-project-ten.vercel.app/total_market_cap/${coin.id}`, {
+        fetch(`http://localhost:3000/total_market_cap/${coin.id}`, {
         method: 'DELETE'
         })
         .then(() => {

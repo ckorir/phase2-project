@@ -19,7 +19,7 @@ export default function AddCurrency({ onAddCurrency }) {
     e.preventDefault();
 
     // Make a POST request to the server
-    fetch('https://phase2-project-ten.vercel.app/total_market_cap', {
+    fetch('http://localhost:3000/total_market_cap', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
